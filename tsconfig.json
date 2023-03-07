@@ -2,7 +2,6 @@
   "compilerOptions": {
     "target": "es2016",
     "module": "ESNext",
-
     "allowUnreachableCode": false,
     "allowUnusedLabels": false,
     "alwaysStrict": true,
@@ -20,7 +19,12 @@
     "strictBindCallApply": true,
     "strictFunctionTypes": true,
     "strictPropertyInitialization": true,
-    "useUnknownInCatchVariables": true,
+    "useUnknownInCatchVariables": false,
+    "baseUrl": "./core",
+    "rootDirs": ["core", "templates"],
+    "outDir": "dist",
+    "declaration": true,
+    "declarationDir": "./types"
   }
 }
   
